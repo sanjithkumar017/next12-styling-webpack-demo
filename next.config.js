@@ -1,6 +1,4 @@
-const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const path = require("path");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -37,18 +35,6 @@ const nextConfig = {
         
       },
       minimizer: [
-        new TerserPlugin({
-          parallel: true,
-          terserOptions: {
-            ecma: 5,
-            mangle: true,
-            compress: true,
-            output: {
-              comments: false,
-              beautify: false,
-            },
-          },
-        }),
         new CssMinimizerPlugin()
       ],
     };
