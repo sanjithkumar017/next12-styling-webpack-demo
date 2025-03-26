@@ -17,10 +17,6 @@
   "devDependencies": {
     "eslint": "9.22.0",
     "eslint-config-next": "15.2.2",
-    "postcss": "^8.5.3",
-    "purgecss-webpack-plugin": "^7.0.2",
-    "terser": "5.18.2",
-    "terser-webpack-plugin": "5.3.3",
     "webpack": "5.98.0"
   }
 }
